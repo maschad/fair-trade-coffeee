@@ -1,4 +1,4 @@
-pragma solidity ^0.4.24;
+pragma solidity ^0.5.16;
 
 // Import the library 'Roles'
 import "./Roles.sol";
@@ -6,6 +6,8 @@ import "./Roles.sol";
 
 // Define a contract 'ConsumerRole' to manage this role - add, remove, check
 contract ConsumerRole {
+    using Roles for Roles.Role;
+
     // Define 2 events, one for Adding, and other for Removing
     event ConsumerAdded(address indexed account);
     event ConsumerRemoved(address indexed account);
