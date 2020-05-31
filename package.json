@@ -14,5 +14,8 @@
     "lite-server": "2.4.0",
     "sinon": "^9.0.2",
     "sinon-chai": "^3.5.0"
+  },
+  "dependencies": {
+    "truffle-hdwallet-provider": "^1.0.17"
   }
 }
