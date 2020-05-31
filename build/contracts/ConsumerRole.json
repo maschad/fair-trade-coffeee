@@ -2490,9 +2490,44 @@
     "name": "solc",
     "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "5777": {
+      "events": {
+        "0x28b26e7a3d20aedbc5f8f2ebf7da671c0491723a2b78f47a097b0e46dee07142": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "name": "ConsumerAdded",
+          "type": "event"
+        },
+        "0xe3f5ed5f263f1f01764a96edfc7d025f511ec5f7d180e8816908b78bcf74f098": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "name": "ConsumerRemoved",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x1e2D155beF04bf0F2631a77E69374f3f681a72bE",
+      "transactionHash": "0xd1e541d3c480b2e74a14661447a868930f043e04f19e9ae55e6a17f4f931abec"
+    }
+  },
   "schemaVersion": "3.1.0",
-  "updatedAt": "2020-05-30T19:16:17.677Z",
+  "updatedAt": "2020-05-31T00:19:19.188Z",
+  "networkType": "ethereum",
   "devdoc": {
     "methods": {}
   },

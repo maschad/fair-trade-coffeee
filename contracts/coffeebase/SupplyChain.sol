@@ -179,7 +179,7 @@ contract SupplyChain {
         items[_upc] = Item({
             sku: sku,
             upc: _upc,
-            ownerID: msg.sender,
+            ownerID: _originFarmerID,
             originFarmerID: _originFarmerID,
             originFarmName: _originFarmName,
             originFarmInformation: _originFarmInformation,
@@ -319,7 +319,7 @@ contract SupplyChain {
     // Define a function 'fetchItemBufferOne' that fetches the data
     function fetchItemBufferOne(uint256 _upc)
         public
-        pure
+        view
         returns (
             uint256 itemSKU,
             uint256 itemUPC,
@@ -332,6 +332,14 @@ contract SupplyChain {
         )
     {
         // Assign values to the 8 parameters
+        itemSKU = items[_upc].sku;
+        itemUPC = items[_upc].upc;
+        ownerID = items[_upc].ownerID;
+        originFarmerID = items[_upc].originFarmerID;
+        originFarmName = items[_upc].originFarmName;
+        originFarmInformation = items[_upc].originFarmInformation;
+        originFarmLatitude = items[_upc].originFarmLatitude;
+        originFarmLongitude = items[_upc].originFarmLongitude;
 
         return (
             itemSKU,
@@ -348,7 +356,7 @@ contract SupplyChain {
     // Define a function 'fetchItemBufferTwo' that fetches the data
     function fetchItemBufferTwo(uint256 _upc)
         public
-        pure
+        view
         returns (
             uint256 itemSKU,
             uint256 itemUPC,
@@ -362,6 +370,15 @@ contract SupplyChain {
         )
     {
         // Assign values to the 9 parameters
+        itemSKU = items[_upc].sku;
+        itemUPC = items[_upc].upc;
+        productID = items[_upc].productID;
+        productNotes = items[_upc].productNotes;
+        productPrice = items[_upc].productPrice;
+        itemState = uint256(items[_upc].itemState);
+        distributorID = items[_upc].distributorID;
+        retailerID = items[_upc].retailerID;
+        consumerID = items[_upc].consumerID;
 
         return (
             itemSKU,
