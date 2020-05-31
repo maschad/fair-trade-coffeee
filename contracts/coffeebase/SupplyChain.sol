@@ -263,7 +263,7 @@ contract SupplyChain {
         // Return money to buyer
         uint256 _price = items[_upc].productPrice;
         uint256 amountToReturn = msg.value - _price;
-        items[_upc].consumerID.transfer(amountToReturn);
+        msg.sender.transfer(amountToReturn);
 
         // emit the appropriate event
         emit Sold(_upc);
