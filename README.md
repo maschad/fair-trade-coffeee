@@ -21,6 +21,12 @@ Node v13.8.0
 Web3.js v1.2.1
 ```
 
+## Libraries used
+
+This contract implements an access control inheritance strucutre, to ensure only the authorized players may execute function that modify the state of the coffee bean throughout it's lifecycle.
+
+The Roles library ensures that only particular roles can perform these actions.
+
 ## Setup Instructions
 
 ### This project uses truffle so please ensure you have it installed
