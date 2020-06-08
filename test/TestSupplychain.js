@@ -54,6 +54,11 @@ contract("SupplyChain", function (accounts) {
 			eventEmitted = true;
 		});
 
+		await supplyChain.addFarmer(accounts[1]);
+		await supplyChain.addDistributor(accounts[2]);
+		await supplyChain.addRetailer(accounts[3]);
+		await supplyChain.addConsumer(accounts[4]);
+
 		// Mark an item as Harvested by calling function harvestItem()
 		await supplyChain.harvestItem(
 			upc,
