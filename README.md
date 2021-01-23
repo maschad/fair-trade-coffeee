@@ -2,7 +2,7 @@
 
 # Fair Trade Coffee
 
-A Smart Contract implementing a coffee supply chain, to verify the authenticity and improve trackability of a coffee bean, from farm to consumer.
+A dApp implementing a coffee supply chain, to verify the authenticity and improve trackability of a coffee bean, from farm to consumer.
 
 ## Contracts
 
