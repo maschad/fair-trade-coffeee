@@ -11,7 +11,7 @@
 	"author": "Chad <chad.nehemiah94@gmail.com>",
 	"license": "MIT",
 	"devDependencies": {
-		"lite-server": "2.4.0"
+		"lite-server": "2.6.1"
 	},
 	"dependencies": {
 		"truffle-hdwallet-provider": "^1.0.17"
